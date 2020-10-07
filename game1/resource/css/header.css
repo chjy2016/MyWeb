@@ -9,10 +9,11 @@
 			/*overflow: hidden;*/
 			/*overflow-y: scroll;*/
 		}
-		header,nav,article,footer{
+		header,nav{
 			display: block;
 			/*position: relative;*/
 			overflow: hidden;
+			min-width: 1420px;
 		}
 		nav{
 			width: 100%;

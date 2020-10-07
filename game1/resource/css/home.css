@@ -2,6 +2,8 @@
 			margin:2px;
 			width: 98%;
 			overflow: hidden;
+			min-width: 1420px;
+			display: block;
 		}
 		.broadcast{
 			overflow: hidden;
@@ -97,6 +99,7 @@
 		.otherbroad_two{
 			display: block;
 			border: 1px solid #eee;
+			/*width: 1411px;*/
 			width: 98%;
 			/*height: 320px;*/
 			margin: 15px 20px;
