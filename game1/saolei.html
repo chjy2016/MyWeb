@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>扫雷</title>
+	<meta charset="utf-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resource/css/saolei.css">
+    <script type="text/javascript" src="./resource/js/header.js"></script>
+    <script type="text/javascript" src="./resource/js/headerC.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resource/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/clearfix.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="headcontent">
+		<div class="menu">
+			<button class="btn" id="Sbtn">开始</button>
+			<button class="btn" id="Rbtn" onclick="reloadPage();localclear();">重置</button>		
+		</div>
+		<div class="menu">
+			<form id="levelRadio">
+				<label><input type="radio" name="level" checked="checked" value="level1" onclick="save()">简单难度
+				</label>
+				<label><input type="radio" name="level" value="level2" onclick="save()">中等难度</label>
+				<label><input type="radio" name="level" value="level3" onclick="save()">困难难度</label>
+			</form>
+		</div>
+		<div class="flagBox" id="flagBox">当前剩余雷数：<span id="score"></span>
+	</div>
+	<div class="clear"></div>
+	<div class="box" id="box"></div>
+	<div class="alertBox" id="alertBox">
+		<div class="alertImg" id="alertImg">
+			<div id="txt"></div>
+			<div class="close" id="close"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./resource/js/saolei.js"></script>
+</body>
+</html>

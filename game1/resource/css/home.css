@@ -1,0 +1,153 @@
+		article{
+			margin:2px;
+			width: 98%;
+			overflow: hidden;
+		}
+		.broadcast{
+			overflow: hidden;
+			border:1px solid #eee;
+			width: 650px;
+			height: 350px;
+			display: inline-block;
+			margin-left: 20px;
+			margin-right: 5px;
+			/*height:90%;*/
+		}
+		#img_list{
+			margin: 15px;
+			width: 95%;
+			height: 90%;
+			list-style-type: none;
+			overflow: hidden;
+			border-radius: 2%;
+		}
+		#img_list li{
+			float: left;
+			display: none;
+			width: 100%;
+			height:100%;
+		}
+		#img_list li a img{
+			width: 100%;
+			/*position: relative;*/
+		}
+		#button_list{
+			position: relative;
+			width: 120px;
+			bottom:40px;
+			left: 520px;
+		}
+		#button_list li{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: rgba(240,230,140,0.6);
+			/*background-color: pink;*/
+			float: left;
+			margin:0px 2px;
+			list-style-type: none;
+		}
+		#button_list li:hover{
+			border-color: white;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			border-style: solid;
+		}
+		#button_list .now_img{
+			background-color: rgba(240,230,140,0.8);
+		}
+		#img_list .firstimg{
+			animation: fade-in;/*动画名称*/  
+    		animation-duration: 0.3s;/*动画持续时间*/ 
+    		display: block;
+		}
+		@keyframes fade-in {
+			0%{opacity: 1;}  
+    		40% {opacity: 0.8;}/*过渡状态 透明度为0*/  
+    		100% {opacity: 1;}/*结束状态 透明度为1*/
+		}
+		.otherbroad_one{
+			font-size: 20px;
+			display: inline-block;
+			border:1px solid #eee;
+			width: 680px;
+			/*margin: 10px;*/
+			margin-left: 15px;
+			padding: 5px;
+			height: 340px;
+			position: absolute;
+		}
+		.otherbroad_one .gamecontent{
+			border: 1px solid blue;
+			margin: 12px;
+			height: 316px;
+		}
+		.otherbroad_one .gamecontent p{
+			/*margin-bottom: 15px;*/
+			margin:5px 5px 15px;
+		}
+		.otherbroad_one .gamecontent .gameClist{
+			list-style-type: none;
+		}
+		.otherbroad_one .gamecontent .gameClist li{
+			margin:5px;
+			padding: 5px;
+		}
+		.otherbroad_two{
+			display: block;
+			border: 1px solid #eee;
+			width: 98%;
+			/*height: 320px;*/
+			margin: 15px 20px;
+			font-size: 40px;
+		}
+		.otherbroad_two .center_div{
+			margin: 8px auto;
+			width: 98%;
+			border: 1px solid #eee;
+		}
+		.otherbroad_two .content{
+			display: inline-block;
+			border: 1px solid black;
+			height: 300px;
+			width: 430px;
+			/*margin-left:5px;*/
+			text-align: center;
+			line-height: 300px;
+			/*margin: 8px auto;
+			margin-left: 15px;
+			/*margin:8px 8px 15px 15px;*/
+		}
+		.otherbroad_two .C1{
+			margin-left:12px;
+		}
+		.otherbroad_two .content ul{
+			list-style-type: none;
+		}
+		@media screen and (max-width: 640px){
+			.broadcast,.otherbroad_one{
+				display: block;
+			}
+			.broadcast{
+				width: 95%;
+				display: none;
+			}
+			#button_list{
+				left:20px;
+			}
+			.otherbroad_one{
+				position:static;
+				width: 90%;
+				margin: 10px 15px;
+			}
+			.otherbroad_two .content{
+				display: block;
+				width: 90%;
+				margin: 10px 15px;
+			}
+			.otherbroad_two{
+				width: 95%;
+			}
+
+		}

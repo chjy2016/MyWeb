@@ -1,0 +1,78 @@
+		footer{
+			bottom:0;
+			/*position: relative;*/
+			/*position: absolute;*/
+			width: 90%;
+			display: block;
+			overflow: hidden;
+			padding: 30px;
+			margin-left: 40px;
+			border: 1px solid #eee;
+			height: 300px;
+		}
+		footer *{
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+		footer .topbottom{
+			width: 98%;
+			margin: 0 auto;
+		}
+		footer .my,footer .my_two{
+			background-color: #D3D3D3;
+			display: inline-block;
+			/*width: 49.7%;*/
+			width: 42%;
+			border: solid 1px #eee;
+			padding-right: 40px;
+			margin-right: 40px;
+			/*margin-left: 30px;*/
+			margin-bottom: 10px;
+		}
+		footer .my_two{
+			width: 50%;
+		}
+		.my ul,.my_two ul{
+			height: 80px;
+			display: flex;/*??*/
+			flex-wrap: wrap;/*??*/
+		} 
+		.my ul a,.my_two ul a{
+			display: inline-block;
+			width: 50%;
+			height: 20px;
+			margin-bottom: 10px;
+		}
+		footer .albottom{
+			border: solid 1px #eee;
+			background-color: #D3D3D3;
+			width: 98%;
+			max-width: 1630px;
+			min-width: 300px;/*999*/
+			margin: 0 auto;
+		}
+		.bottom_img{
+			display: inline-block;
+		}
+		.bottom_img img{
+			width: 80px;
+			height: 50px;
+			display: block;
+			margin: 8px;
+		}
+		.bottom_w{
+			display: inline-block;
+			float: right;
+			width: 89%;
+			margin:0 10px;
+			padding:0 10px;
+			height: 200px;
+		}
+		@media screen and (max-width: 640px){
+			footer .albottom{
+				display: none;
+			}
+			footer{
+				width: 90%;
+			}
+		}

@@ -1,0 +1,47 @@
+<!--页眉-共通-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<header>
+		<nav class="topnav">
+			<ul>
+				<li>
+					<a class="home clickcolor" href="#home">首页</a>
+				</li>	
+				<li class="dropdown">
+					<a class="gameplay" href="#gameplay">简单小游戏
+					</a>
+					<ul class="dropdown-game">
+      					<li><a class="saolei" href="#">扫雷</a></li>
+      					<li><a class="tanchishe" href="#">贪吃蛇</a></li>
+    				</ul>
+    			</li>
+				<li class="rightnav">
+					<a class="morefun" href="#morefun">更多</a>
+				</li>
+			</ul>				
+		</nav>
+	</header>
+	<script type="text/javascript">
+		var game=document.getElementsByClassName('gameplay')[0];
+		$(document).ready(function() {
+		// Stuff to do as soon as the DOM is ready;
+		$('nav ul li a').click(function(){
+			var c=this;
+			$('nav ul li a').each(function(){
+				if(this==c){
+					$(this).addClass('clickcolor');
+				}				
+				$(this).not(c).removeClass('clickcolor');
+			});
+		});
+		$('.dropdown-game li a').click(function(){
+			$(game).addClass('clickcolor');
+		});
+	});
+	</script>
+</body>
+</html>
