@@ -129,6 +129,9 @@
 			list-style-type: none;
 		}
 		@media screen and (max-width: 640px){
+			article{
+				min-width: 640px;
+			}
 			.broadcast,.otherbroad_one{
 				display: block;
 			}
